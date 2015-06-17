@@ -5,7 +5,6 @@
 !.gitignore
 node_modules/*
 */node_modules/*
-.project
 .settings/
 .idea
 *.svn
