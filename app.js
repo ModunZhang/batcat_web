@@ -7,6 +7,7 @@ var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
 var aboutUs = require('./routes/aboutUs');
+var privacyPolicy = require('./routes/privacyPolicy');
 
 var app = express();
 
@@ -24,14 +25,15 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/about-us', aboutUs);
+app.use('/privacy-policy', privacyPolicy);
 
 // catch 404 and forward to error handler
-app.use(function(req, res, next){
+app.use(function(req, res){
   res.status(404);
   res.render('404', {layout:null});
 });
 // catch 500 and forward to error handler
-app.use(function(err, req, res, next){
+app.use(function(err, req, res){
   res.status(500);
   res.render('500', {layout:null});
 });
