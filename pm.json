@@ -7,7 +7,7 @@
       "autorestart": true,
       "env": {
         "NODE_ENV": "production",
-        "HOST": "47.88.78.114",
+        "HOST": ["47.88.78.114", "127.0.0.1"],
         "PORT": "81",
         "DEBUG": "BatCatWeb"
       }
