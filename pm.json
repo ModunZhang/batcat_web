@@ -1,14 +1,14 @@
 {
   "apps": [
     {
-      "name": "batcat-gate",
+      "name": "batcat-web",
       "script": "bin/www",
       "merge_logs": true,
       "autorestart": true,
       "env": {
         "NODE_ENV": "production",
         "HOST": "47.88.78.114",
-        "PORT": "80",
+        "PORT": "81",
         "DEBUG": "BatCatWeb"
       }
     }
